@@ -24,23 +24,23 @@
 
 class block_zopim extends block_base {
 
-    function init() {
+    public function init() {
         $this->title = get_string('pluginname', 'block_zopim');
     }
 
-    function instance_allow_multiple() {
+    public function instance_allow_multiple() {
         return false;
     }
 
-    function has_config() {
+    public function has_config() {
         return true;
     }
 
-    function instance_allow_config() {
+    public function instance_allow_config() {
         return true;
     }
 
-    function applicable_formats() {
+    public function applicable_formats() {
         return array(
             'all' => true
         );
@@ -53,7 +53,7 @@ class block_zopim extends block_base {
         }
     }
 
-    function get_content() {
+    public function get_content() {
         global $CFG, $USER;
 
         if ($this->content !== null) {
@@ -132,7 +132,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             break;
         }
     }
- 
+
     \$zopim(function() {
         \$zopim.livechat.button.setHideWhenOffline();
         \$zopim.livechat

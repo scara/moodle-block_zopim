@@ -24,6 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013042700;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2012120300;        // Requires this Moodle version: 2.4, onwards
-$plugin->component = 'block_zopim';     // Full name of the plugin (used for diagnostics)
+$plugin->version   = 2013042800;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2012120300;        // Requires this Moodle version: 2.4 onwards.
+$plugin->cron      = 0;                 // Period for cron to check this module (secs).
+$plugin->component = 'block_zopim';     // Full name of the plugin (used for diagnostics).
+$plugin->maturity  = MATURITY_RC;       // This version's maturity level.
+$plugin->release   = '1.0-rc2';         // Human-friendly version name.
